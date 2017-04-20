@@ -14,13 +14,15 @@ enum CellMode {
 }
 
 
-class MainViewController: UITableViewController,RefreshViewDelegate {
+class MainViewController: UITableViewController,RefreshViewDelegate,UIViewControllerTransitioningDelegate {
     var persons = [Person]()
     var cellMode: CellMode = .full
     var tutorView:UIImageView!
 
     let kRefreshViewHeight: CGFloat = 110.0
       var refreshView: RefreshView!
+     let transition = DAExpandAnimation()
+    var selectedCellFrame:CGRect!
 
 
     let cellColors: [UIColor] = [ UIColor(rgb: 0xf5dc6f), UIColor(rgb: 0xf5be4b), UIColor(rgb: 0xfec99b), UIColor(rgb: 0xffa5b4), UIColor(rgb: 0xfec99b), UIColor(rgb: 0xe9bcd8), UIColor(rgb: 0xcfd9e6)
@@ -89,11 +91,15 @@ class MainViewController: UITableViewController,RefreshViewDelegate {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! Cell
+         selectedCellFrame = cell.frame
         let vc = DetailViewController(nibName: nil, bundle: nil)
         vc.person = persons[indexPath.row]
         vc.image = cell.avatarImageView.image
         vc.color = cell.color
-        show(vc, sender: nil)
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = .custom
+        present(vc, animated: true, completion: nil)
+        
     }
 
     func addSegmentToNaviTitle() {
@@ -157,6 +163,17 @@ class MainViewController: UITableViewController,RefreshViewDelegate {
         let item = UIBarButtonItem(customView: btn)
         navigationItem.setRightBarButtonItems([item], animated: true)
         navigationController?.navigationBar.tintColor = .white
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        transition.collapsedViewFrame =  { return  self.selectedCellFrame }
+        transition.animationDuration = 0.6
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
     }
 }
 

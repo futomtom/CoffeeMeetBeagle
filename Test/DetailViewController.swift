@@ -33,14 +33,18 @@ class DetailViewController: ScrollingNavigationViewController {
         view.backgroundColor = color
         title = "\(person.firstName!) \(person.lastName!)"
         initUI()
-        (navigationController as! ScrollingNavigationController).followScrollView(scrollView, delay: 0.0)
+     //   (navigationController as! ScrollingNavigationController).followScrollView(scrollView, delay: 0.0)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
          scrollView.contentSize.height = constants.inset + constants.imageHeigh + (constants.gap*3) + bio.frame.size.height
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(actionClose(_:))))
     }
-
+    
+    func actionClose(_ tap: UITapGestureRecognizer) {
+        dismiss(animated: true, completion: nil)
+    }
 
 
     func initUI() {
@@ -54,10 +58,11 @@ class DetailViewController: ScrollingNavigationViewController {
 
         bio = createBioLabel()
         scrollView.contentSize = hostView.frame.size
-        
+    /*
         let bar = (navigationController?.navigationBar)!
         bar.titleTextAttributes =  [NSFontAttributeName: UIFont(name: "Chalkduster", size: 26)!, NSForegroundColorAttributeName: UIColor.white]
         bar.tintColor = .white
+ */
     }
 
     func LikeButtonDidTaped() {

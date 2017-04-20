@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/MainViewController.swift"
-            timestampString = "506830811.509477"
+            timestampString = "507006610.350817"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/MainViewController.swift"
-            timestampString = "506815337.469632"
+            timestampString = "507006610.350817"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "cellColors"
             landmarkType = "24">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/DetailViewController.swift"
-            timestampString = "506833324.572663"
+            timestampString = "506999109.003681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "DetailViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/DetailViewController.swift"
-            timestampString = "506833324.572663"
+            timestampString = "506999109.003681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "createLikeButton()"
             landmarkType = "7">
          </BreakpointContent>
@@ -217,8 +217,8 @@
                   symbolName = "Test.ScrollingNavigationViewController.scrollViewShouldScrollToTop (__ObjC.UIScrollView) -&gt; Swift.Bool"
                   moduleName = "Test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alex/mycode/Test/Test/ScrollingNavigationViewController.swift"
-                  timestampString = "506919980.035571"
+                  urlString = "file:///Users/alex/mycode/CMB_Test/Test/ScrollingNavigationViewController.swift"
+                  timestampString = "512687398.87181"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -232,8 +232,8 @@
                   symbolName = "Test.ScrollingNavigationViewController.scrollViewShouldScrollToTop (__ObjC.UIScrollView) -&gt; Swift.Bool"
                   moduleName = "Test"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alex/mycode/Test/Test/ScrollingNavigationViewController.swift"
-                  timestampString = "506919980.037414"
+                  urlString = "file:///Users/alex/mycode/CMB_Test/Test/ScrollingNavigationViewController.swift"
+                  timestampString = "512687398.873628"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/MainViewController.swift"
-            timestampString = "506830811.509477"
+            timestampString = "507006610.350817"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/DetailViewController.swift"
-            timestampString = "506833324.572663"
+            timestampString = "506999109.003681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "createProfileImageView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/DetailViewController.swift"
-            timestampString = "506833324.572663"
+            timestampString = "506999109.003681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "LikeButtonDidTaped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,13 +346,58 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test/DetailViewController.swift"
-            timestampString = "506833437.518681"
+            timestampString = "506999109.003681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "createLikeButton()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            symbolName = "UIApplicationMain"
+            moduleName = "">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "reveal load">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIApplicationMain"
+                  moduleName = "UIKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test/Extention.swift"
+            timestampString = "509419327.505062"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "UIColor"
+            landmarkType = "4">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

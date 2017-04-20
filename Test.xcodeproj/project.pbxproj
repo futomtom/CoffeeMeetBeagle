@@ -12,6 +12,7 @@
 		FA5E9A271E347849002C2036 /* ConfettiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E9A241E347849002C2036 /* ConfettiLayer.swift */; };
 		FA5E9A281E347849002C2036 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E9A251E347849002C2036 /* ConfettiView.swift */; };
 		FA5E9A291E347849002C2036 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E9A261E347849002C2036 /* ShapeView.swift */; };
+		FAE3D8E11E3830010050338C /* DAExpandAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D8E01E3830010050338C /* DAExpandAnimation.swift */; };
 		FAE77F411E319D8D00FE71D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE77F401E319D8D00FE71D5 /* AppDelegate.swift */; };
 		FAE77F431E319D8D00FE71D5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE77F421E319D8D00FE71D5 /* MainViewController.swift */; };
 		FAE77F481E319D8D00FE71D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE77F471E319D8D00FE71D5 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		FA5E9A241E347849002C2036 /* ConfettiLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiLayer.swift; sourceTree = "<group>"; };
 		FA5E9A251E347849002C2036 /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		FA5E9A261E347849002C2036 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		FAE3D8E01E3830010050338C /* DAExpandAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAExpandAnimation.swift; sourceTree = "<group>"; };
 		FAE77F3D1E319D8D00FE71D5 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE77F401E319D8D00FE71D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE77F421E319D8D00FE71D5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE77F421E319D8D00FE71D5 /* MainViewController.swift */,
+				FAE3D8E01E3830010050338C /* DAExpandAnimation.swift */,
 				FA0B38671E32F97900F8D077 /* DetailViewController.swift */,
 			);
 			name = controller;
@@ -166,6 +169,7 @@
 				FAE77F391E319D8D00FE71D5 /* Sources */,
 				FAE77F3A1E319D8D00FE71D5 /* Frameworks */,
 				FAE77F3B1E319D8D00FE71D5 /* Resources */,
+				FAE60B6C1E4C1F8900BBF690 /* Reveal */,
 			);
 			buildRules = (
 			);
@@ -224,6 +228,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FAE60B6C1E4C1F8900BBF690 /* Reveal */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Reveal;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REVEAL_APP_PATH=$(mdfind kMDItemCFBundleIdentifier=\"com.ittybittyapps.Reveal2\" | head -n 1)\nBUILD_SCRIPT_PATH=\"${REVEAL_APP_PATH}/Contents/SharedSupport/Scripts/reveal_server_build_phase.sh\"\nif [ \"${REVEAL_APP_PATH}\" -a -e \"${BUILD_SCRIPT_PATH}\" ]; then\n\"${BUILD_SCRIPT_PATH}\"\nelse\necho \"Reveal Server not loaded: Cannot find a compatible Reveal app.\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAE77F391E319D8D00FE71D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -236,6 +257,7 @@
 				FAE77F531E31A70500FE71D5 /* Cell.swift in Sources */,
 				FAE77F551E31A7B400FE71D5 /* Person.swift in Sources */,
 				FAEC1E091E353C14000074E0 /* RefreshView.swift in Sources */,
+				FAE3D8E11E3830010050338C /* DAExpandAnimation.swift in Sources */,
 				FAEC1E0B1E354AA6000074E0 /* RibbonView.swift in Sources */,
 				822532571E32039C000D0F53 /* Extention.swift in Sources */,
 				FAE77F411E319D8D00FE71D5 /* AppDelegate.swift in Sources */,
@@ -358,7 +380,7 @@
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexfu.t1.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.audible.iphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -371,7 +393,7 @@
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexfu.t1.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.audible.iphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
